@@ -20,7 +20,6 @@ title: Setup
 > - [speciesSubset.csv]({{ page.root }}/data/speciesSubset.csv)
 > - [plots.csv](https://ndownloader.figshare.com/files/3299474)
 > - [bouldercreek_09_2013.txt]({{ page.root }}/data/bouldercreek_09_2013.txt)
-> - [SQL Database](https://ndownloader.figshare.com/files/11188550)
 {: .prereq}
 
 
