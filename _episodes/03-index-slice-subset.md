@@ -178,6 +178,23 @@ surveys_df = pd.read_csv("data/surveys.csv")
 ~~~
 {: .language-python}
 
+## Slicing Subsets of Rows and Columns in Python
+
+We can select specific ranges of our data in both the row and column directions
+using label-based indexing with the `loc` method. *Integers* may be used but
+they are interpreted as a *label*.
+
+~~~
+# What does this do?
+surveys_df.loc[0, ['species_id', 'plot_id', 'weight']]
+~~~
+{: .language-python}
+
+**NOTE**: Labels must be found in the DataFrame or you will get a `KeyError`.
+
+When using `loc`, integers *can* be used, but the integers refer to the
+index label and not the position.
+
 ## Subsetting Data using Criteria
 
 We can also select a subset of our data using criteria. For example, we can
