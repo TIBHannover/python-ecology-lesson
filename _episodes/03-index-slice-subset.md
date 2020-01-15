@@ -66,12 +66,9 @@ we can select all data from a column named `species_id` from the `surveys_df`
 DataFrame by name. There are two ways to do this:
 
 ~~~
+# Select a 'subset' of the data using the column name
 # TIP: use the .head() method we saw earlier to make output shorter
-# Method 1: select a 'subset' of the data using the column name
 surveys_df['species_id']
-
-# Method 2: use the column name as an 'attribute'; gives the same output
-surveys_df.species_id
 ~~~
 {: .language-python}
 
