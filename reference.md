@@ -90,19 +90,3 @@ scripting mode
 Sequential (data structure)
 :   is an ordered group of objects stored in memory which can be accessed specifying
     their index, i.e. their position, in the structure.
-
-SQL
-:   or Structured Query Language, is a domain-specific language for managing data
-    stored in a relational database management system (RDBMS).
-
-SQLite
-:   is a self-contained, public domain SQL database engine.
-
-string
-:   is a Python data type designed to store sequences of characters.
-
-tuple
-:   is a Python data structure designed to contain sequences of integers, floats,
-    strings and any combination of the previous. The sequence is ordered and indexed
-    by integers, starting from 0. Elements of a tuple can be accessed by their index
-    but cannot be modified.

@@ -127,7 +127,6 @@ os.listdir('data')
 {: .language-python}
 ~~~
 ['plots.csv',
- 'portal_mammals.sqlite',
  'species.csv',
  'survey2001.csv',
  'survey2002.csv',
