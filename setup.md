@@ -69,3 +69,15 @@ wish to use a different browser, open this link: <http://localhost:8888>.
 
 For a brief introduction to Jupyter Notebooks, please consult with our
 [Introduction to Jupyter Notebooks](jupyter_notebooks) page.
+
+We use it for its user-friendly presentation of plots, data and text.
+However, it [does cause problems](https://twitter.com/joelgrus/status/1044318416012750850)
+for projects larger than a single analysis script.
+
+## Install PyCharm with EduTools
+
+We recommend [PyCharm Community](https://www.jetbrains.com/pycharm/download/)
+for developing larger Python codes and projects.
+
+It can be upgraded with [EduTools](https://www.jetbrains.com/help/education/install-edutools-plugin.html?section=PyCharm)
+which makes many interactive tutorials available to continue learning.
