@@ -5,8 +5,7 @@ exercises: 0
 questions:
   - "What is Python and why should I learn it?"
 objectives:
-  - "Describe the purpose of the editor, console, help, variable explorer and file explorer panes in
-     Spyder."
+  - "Describe the purpose of the editor, console, help, variable explorer and file explorer panes of an IDE."
   - "Organize files and directories for a set of analyses as a Python project, and understand the
      purpose of the working directory."
   - "Know where to find help."
@@ -15,7 +14,7 @@ objectives:
 keypoints:
   - "Python is an open source and platform independent programming language."
   - "SciPy ecosystem for Python provides the tools necessary for scientific computing."
-  - "Jupyter Notebook and the Spyder IDE are great tools to code in and interact with Python. With
+  - "Jupyter Notebooks and IDEs are great tools to code in and interact with Python. With
      the large Python community it is easy to find help in the internet."
 ---
 
@@ -74,13 +73,11 @@ We know we have already said that but it is worth repeating.
 <br />
 ## Knowing your way around Anaconda
 [Anaconda][anaconda] distribution of Python includes a lot of its popular packages,
-such as the IPython console, Jupyter Notebook, and Spyder IDE.
+such as the IPython console and Jupyter Notebook.
 Have a quick look around the Anaconda Navigator. You can launch programs from the Navigator or use the command line.
 
 The [Jupyter Notebook](https://jupyter.org) is an open-source web application that allows you to create
 and share documents that allow one to easilty create documents that combine code, graphs, and narrative text.
-[Spyder][spyder-ide] is an **Integrated Development Environment** that
-allows one to write Python scripts and interact with the Python software from within a single interface.
 
 Anaconda also comes with a package manager called [conda](https://conda.io/docs/),
 which makes it easy to install and update additional packages.
@@ -137,20 +134,19 @@ You can recognise a code cell by the `In[ ]:` at the beginning of the cell and o
 Pressing the __+__ button in the menu bar will add a new cell.
 All your commands as well as any output will be saved with the notebook.
 
-#### If you are working with Spyder:
+#### If you are working with an IDE:
 
 You can either use the console or use script files (plain text files that contain your code).  The
-console pane (in Spyder, the bottom right panel) is the place where commands written in the Python
+console pane is the place where commands written in the Python
 language can be typed and executed immediately by the computer. It is also where the results will be
 shown.  You can execute commands directly in the console by pressing <kbd>Return</kbd>, but they
-will be "lost" when you close the session.  Spyder uses the [IPython](http://ipython.org) console by
-default.
+will be "lost" when you close the session.
 
 Since we want our code and workflow to be reproducible, it is better to type the commands in
 the script editor, and save them as a script. This way, there is a complete record of what we did,
 and anyone (including our future selves!) can easily reproduce the results on their computer.
 
-Spyder allows you to execute commands directly from the script editor by using the run buttons on
+IDEs usually allow you to execute commands directly from the script editor by using run button or menu item on the
 top.  To run the entire script click _Run file_ or press <kbd>F5</kbd>, to run the current line
 click _Run selection or current line_ or press <kbd>F9</kbd>, other run buttons allow to run script
 cells or go into debug mode. When using <kbd>F9</kbd>, the command on the current line in the script
@@ -159,9 +155,7 @@ console and executed.
 
 At some point in your analysis you may want to check the content of a variable or the structure of
 an object, without necessarily keeping a record of it in your script. You can type these commands
-and execute them directly in the console. Spyder provides the
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> and <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>
-shortcuts to allow you to jump between the script and the console panes.
+and execute them directly in the console.
 
 If Python is ready to accept commands, the IPython console shows an `In [..]:` prompt with the
 current console line number in `[]`. If it receives a command (by typing, copy-pasting or sent from
@@ -252,6 +246,5 @@ ask a good question.
 [python-mailing-lists]: https://www.python.org/community/lists
 [stack-overflow]: https://stackoverflow.com
 [so-python]: https://stackoverflow.com/questions/tagged/python?tab=Votes
-[spyder-ide]: https://www.spyder-ide.org
 
 {% include links.md %}
