@@ -242,15 +242,6 @@ False
 {: .output}
 
 ~~~
-True and True
-~~~
-{: .language-python}
-~~~
-True
-~~~
-{: .output}
-
-~~~
 True or False
 ~~~
 {: .language-python}
@@ -267,6 +258,10 @@ True and False
 False
 ~~~
 {: .output}
+
+"[Thruth tables](https://en.m.wikibooks.org/wiki/File:Truth_table_for_AND,_OR,_and_NOT.png)"
+give you a quick overview of the possible combinations and boolean results.
+
 
 ## Sequences: Lists and Tuples
 
