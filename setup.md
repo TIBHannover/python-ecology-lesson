@@ -92,7 +92,6 @@ From the terminal, type:
 
 ~~~
 conda install -y numpy pandas matplotlib jupyter
-conda install -c conda-forge plotnine
 ~~~
 {: .language-bash}
 

@@ -7,9 +7,9 @@ questions:
     - "Why should I use Python to create plots?"
 objectives:
     - "Import the pyplot toolbox to create figures in Python."
-    - "Use matplotlib to make adjustments to Pandas or plotnine objects."
+    - "Use matplotlib to make adjustments to Pandas plot objects."
 keypoints:
-    - "Matplotlib is the engine behind plotnine and Pandas plots."
+    - "Matplotlib is the engine behind Pandas plots."
     - "Object-based nature of matplotlib plots enables their detailed customization after they have been created."
     - "Export plots to a file using the `savefig` method."
 ---
@@ -97,7 +97,7 @@ With the new column names:
 
 [Matplotlib](https://matplotlib.org/) is a Python package that is widely used throughout the scientific Python community to create high-quality and publication-ready graphics. It supports a wide range of raster and vector graphics formats including PNG, PostScript, EPS, PDF and SVG.
 
-Moreover, matplotlib is the actual engine behind the plotting capabilities of both Pandas and plotnine packages. For example, when we call the `.plot` method on Pandas data objects, we actually use the matplotlib package.
+Moreover, matplotlib is the actual engine behind the plotting capabilities of Pandas and other plotting packages. For example, when we call the `.plot` method on Pandas data objects, we actually use the matplotlib package.
 
 First, import the pyplot toolbox:
 
@@ -134,7 +134,7 @@ to which we may make further adjustments and refinements using other matplotlib 
 > ## Tip
 > Matplotlib itself can be overwhelming, so a useful strategy is to
 > do as much as you easily can in a convenience layer, _i.e._ start
-> creating the plot in Pandas or plotnine, and then use matplotlib
+> creating the plot in Pandas, and then use matplotlib
 > for the rest.
 {: .callout}
 
@@ -219,12 +219,12 @@ ax2.hist(beta_draws)
 
 
 
-### Link matplotlib, Pandas and plotnine
+### Link matplotlib and Pandas
 
-When we create a plot using pandas or plotnine, both libraries use matplotlib
-to create those plots. The plots created in pandas or plotnine are matplotlib
+When we create a plot using pandas, matplotlib is used
+to create those plots. The plots created in pandas are matplotlib
 objects, which enables us to use some of the advanced plotting options available
-in the matplotlib library. Because the objects output by pandas and plotnine
+in the matplotlib library. Because the objects output by pandas
 can be read by matplotlib, we have many more options than any one library can
 provide, offering a consistent environment to make publication-quality visualizations.
 
@@ -241,28 +241,6 @@ fig.suptitle('Scatter plot of weight versus hindfoot length', fontsize=15)
 {: .language-python}
 
 ![Extended version of scatter plot surveys](../fig/08_scatter_surveys_extended.png)
-
-To retrieve the matplotlib figure object from plotnine for customization, use the `draw()` function in plotnine:
-
-~~~
-import plotnine as p9
-myplot = (p9.ggplot(data=surveys,
-                    mapping=p9.aes(x='hindfoot_length', y='weight')) +
-              p9.geom_point())
-
-# convert output plotnine to a matplotlib object
-my_plt_version = myplot.draw()
-
-# Provide further adaptations with matplotlib:
-p9_ax = my_plt_version.axes[0] # each subplot is an item in a list
-p9_ax.set_xlabel("Hindfoot length")
-p9_ax.tick_params(labelsize=16, pad=8)
-p9_ax.set_title('Scatter plot of weight versus hindfoot length', fontsize=15)
-plt.show() # not necessary in Jupyter Notebooks
-~~~
-{: .language-python}
-
-![Extended version of plotnine scatter plot](../fig/08_scatter_surveys_plotnine.png)
 
 > ## Challenge - Pandas and matplotlib
 > Load the streamgage data set with Pandas, subset the week of the 2013 Front Range flood
