@@ -40,64 +40,23 @@ title: Setup
 > * [Matplotlib](http://matplotlib.org/)
 {: .prereq}
 
-## Install the workshop packages
+## Install Anaconda
 
-For installing these packages we will use Anaconda or Miniconda.
-They both use [Conda](https://conda.io/en/latest/), the main difference is
-that Anaconda comes with a lot of packages pre-installed.
-With Miniconda you will need to install the required packages.
+Download [Anacondas Python 3.x installer](https://www.anaconda.com/distribution/#download-section)
+and run it according to the instructions.
 
-### Anaconda installation
+### Check the installation
 
-Anaconda will install the workshop packages for you.
-
-#### Download and install Anaconda
-
-Download and install [Anaconda](https://www.anaconda.com/distribution/#download-section).
-Remember to download and install the installer for Python 3.x.
-
-#### Download plotting package
-
-The plotting package plotnine is not installed by default.  From the terminal,
-type:
-
-~~~
-conda install -c conda-forge plotnine
-~~~
-{: .language-bash}
-
-### Miniconda installation
-
-Miniconda is a "light" version of Anaconda. If you install and use Miniconda
-you will also need to install the workshop packages.
-
-#### Download and install Miniconda
-
-Download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-following the instructions. Remember to download and run the installer for
-Python 3.x.
-
-#### Check the installation of Miniconda
-
-From the terminal, type:
+In the terminal or the Anaconda Prompt, type:
 
 ~~~
 conda list
 ~~~
 {: .language-bash}
 
-### Install the required workshop packages with conda
-
-From the terminal, type:
-
-~~~
-conda install -y numpy pandas matplotlib jupyter
-~~~
-{: .language-bash}
-
 ## Launch a Jupyter notebook
 
-After installing either Anaconda or Miniconda and the workshop packages,
+After installing Anaconda,
 launch a Jupyter notebook by typing this command from the terminal:
 
 ~~~
@@ -110,3 +69,15 @@ wish to use a different browser, open this link: <http://localhost:8888>.
 
 For a brief introduction to Jupyter Notebooks, please consult with our
 [Introduction to Jupyter Notebooks](jupyter_notebooks) page.
+
+We use it for its user-friendly presentation of plots, data and text.
+However, it [does cause problems](https://twitter.com/joelgrus/status/1044318416012750850)
+for projects larger than a single analysis script.
+
+## Install PyCharm with EduTools
+
+We recommend [PyCharm Community](https://www.jetbrains.com/pycharm/download/)
+for developing larger Python codes and projects.
+
+It can be upgraded with [EduTools](https://www.jetbrains.com/help/education/install-edutools-plugin.html?section=PyCharm)
+which makes many interactive tutorials available to continue learning.
