@@ -103,6 +103,87 @@ Python tells us what type of error it is in the traceback, at the bottom it says
 `KeyError: 'speciess'` which means that `speciess` is not a valid column name (nor a valid key in
 the related Python data type dictionary).
 
+
+## Extracting Range based Subsets: Slicing
+
+> ## Reminder
+> Python uses 0-based indexing.
+{: .callout}
+
+Let's remind ourselves that Python uses 0-based
+indexing. This means that the first element in an object is located at position
+`0`. This is different from other tools like R and Matlab that index elements
+within objects starting at 1.
+
+~~~
+# Create a list of numbers:
+a = [1, 2, 3, 4, 5]
+~~~
+{: .language-python}
+
+![indexing diagram](../fig/slicing-indexing.png)
+![slicing diagram](../fig/slicing-slicing.png)
+
+
+> ## Challenge - Extracting data
+>
+> 1. What value does the code below return?
+>
+>    ~~~
+>    a[0]
+>    ~~~
+>    {: .language-python }
+>
+> 2. How about this:
+>
+>    ~~~
+>    a[5]
+>    ~~~
+>    {: .language-python }
+>
+> 3. In the example above, calling `a[5]` returns an error. Why is that?
+>
+> 4. What about?
+>
+>    ~~~
+>    a[len(a)]
+>    ~~~
+>    {: .language-python }
+{: .challenge}
+
+
+## Slicing Subsets of Rows in Python
+
+Slicing using the `[]` operator selects a set of rows and/or columns from a
+DataFrame. To slice out a set of rows, you use the following syntax:
+`data[start:stop]`. When slicing in pandas the start bound is included in the
+output. The stop bound is one step BEYOND the row you want to select. So if you
+want to select rows 0, 1 and 2 your code would look like this:
+
+~~~
+# Select rows 0, 1, 2 (row 3 is not selected)
+surveys_df[0:3]
+~~~
+{: .language-python}
+
+The stop bound in Python is different from what you might be used to in
+languages like Matlab and R.
+
+~~~
+# Select the first 5 rows (rows 0, 1, 2, 3, 4)
+surveys_df[:5]
+
+# Select the last element in the list
+# (the slice starts at the last element, and ends at the end of the list)
+surveys_df[-1:]
+~~~
+{: .language-python}
+
+We can also reassign values within subsets of our DataFrame.
+
+But before we do that, let's look at the difference between the concept of
+copying objects and the concept of referencing objects in Python.
+
 ## Copying Objects vs Referencing Objects in Python
 
 Let's start with an example:
@@ -290,4 +371,3 @@ Experiment with selecting various subsets of the "surveys" data.
 {: .challenge}
 
 {% include links.md %}
-
