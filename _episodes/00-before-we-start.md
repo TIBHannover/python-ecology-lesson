@@ -186,6 +186,7 @@ code to suit your purpose might make it easier for you to get started.
 * type `help()`
 * type `?object` or `help(object)` to get information about an object
 * [Python documentation][python-docs]
+* [Pandas documentation][pandas-docs]
 
 Finally, a generic Google or internet search "Python task" will often either send you to the
 appropriate module documentation or a helpful forum where someone else has already asked your
@@ -242,6 +243,7 @@ ask a good question.
 [anaconda]: https://www.anaconda.com
 [anaconda-community]: https://www.anaconda.com/community
 [dive-into-python3]: https://finderiko.com/python-book
+[pandas-docs]: https://pandas.pydata.org/pandas-docs/stable/
 [pypi]: https://pypi.python.org/pypi
 [python-docs]: https://www.python.org/doc
 [python-guide]: https://docs.python-guide.org
