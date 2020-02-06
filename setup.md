@@ -42,7 +42,7 @@ title: Setup
 
 ## Install Anaconda
 
-Download [Anacondas Python 3.x installer](https://www.anaconda.com/distribution/#download-section)
+Download [Anaconda's Python 3.x installer](https://www.anaconda.com/distribution/#download-section)
 and run it according to the instructions.
 This automatically installs the above-listed required Python packages.
 
