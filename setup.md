@@ -69,7 +69,7 @@ The notebook should open automatically in your browser. If it does not or you
 wish to use a different browser, open this link: <http://localhost:8888>.
 
 For a brief introduction to Jupyter Notebooks, please consult with our
-[Introduction to Jupyter Notebooks](jupyter_notebooks) page.
+[Introduction to Jupyter Notebooks](https://datacarpentry.org/python-ecology-lesson/jupyter_notebooks/) page.
 
 We use it for its user-friendly presentation of plots, data and text.
 However, it [does cause problems](https://twitter.com/joelgrus/status/1044318416012750850)
