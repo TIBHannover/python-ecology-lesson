@@ -254,8 +254,8 @@ fig.suptitle('Scatter plot of weight versus hindfoot length', fontsize=15)
 > >                         names=["agency", "site_id", "datetime",
 > >                                "timezone", "discharge", "discharge_cd"])
 > > discharge["datetime"] = pd.to_datetime(discharge["datetime"])
-> > front_range = discharge[(discharge["datetime"] >= "2013-09-09") &
-> >                         (discharge["datetime"] < "2013-09-15")]
+> > front_range = discharge[(discharge["datetime"] >= "2013-09-11") &
+> >                         (discharge["datetime"] <= "2013-09-15")]
 > >
 > > fig, ax = plt.subplots()
 > > front_range.plot(x ="datetime", y="discharge", ax=ax)
@@ -268,7 +268,7 @@ fig.suptitle('Scatter plot of weight versus hindfoot length', fontsize=15)
 > >                              "timezone", "flow_rate", "height"])
 > > fig, ax = plt.subplots()
 > > flood = discharge[(discharge["datetime"] >= "2013-09-11") &
-> >                   (discharge["datetime"] < "2013-09-15")]
+> >                   (discharge["datetime"] <= "2013-09-15")]
 > >
 > > ax2 = fig.add_axes([0.65, 0.575, 0.25, 0.3])
 > > flood.plot(x ="datetime", y="flow_rate", ax=ax)
@@ -284,7 +284,7 @@ fig.suptitle('Scatter plot of weight versus hindfoot length', fontsize=15)
 > >                              "timezone", "flow_rate", "height"])
 > > fig, ax = plt.subplots()
 > > flood = discharge[(discharge["datetime"] >= "2013-09-11") &
-> >                   (discharge["datetime"] < "2013-09-15")]
+> >                   (discharge["datetime"] <= "2013-09-15")]
 > >
 > > ax2 = fig.add_axes([0.65, 0.575, 0.25, 0.3])
 > > flood.plot(x ="datetime", y="flow_rate", ax=ax)
