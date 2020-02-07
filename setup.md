@@ -82,3 +82,13 @@ we recommend [PyCharm Community](https://www.jetbrains.com/pycharm/download/).
 
 It can be upgraded with [EduTools](https://www.jetbrains.com/help/education/install-edutools-plugin.html?section=PyCharm)
 which makes many interactive tutorials available to continue learning.
+
+One downside compared to Jupyter Notebooks: plots are not automatically shown.
+You need to [search its settings](https://www.jetbrains.com/help/pycharm/interactive-console.html)
+for `IPython`, enable it and use the commands:
+
+````python
+import matplotlib.pyplot as plt
+...plotting code...
+plt.show()
+```
